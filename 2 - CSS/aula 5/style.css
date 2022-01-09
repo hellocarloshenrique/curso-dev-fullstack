@@ -1,0 +1,17 @@
+body {
+    background: #e0e0e0;
+}
+
+p {
+    color:rgb(26, 26, 26)
+}
+
+.foto {
+    margin: 30px 30px 30px 30px;
+    /*um outro exemplo de shorthand*/
+
+    width: 200px;
+    border: 3px solid #ffffff;
+    /* o nome disso é shorthand*/
+    border-radius: 50%;
+}
