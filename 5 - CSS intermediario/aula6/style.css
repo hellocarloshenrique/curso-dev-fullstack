@@ -1,0 +1,53 @@
+a {
+    color: green;
+}
+
+a:hover {
+    color: grey;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover + .caixa {
+    display: block;
+}
+
+a:visited {
+    color: black;
+}
+
+a:active {
+    color: blue;
+}
+
+.caixa {
+    margin-top: 20px;
+
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+
+.caixa:hover {
+    background-color: grey;
+}
+
+ul li:first-child {
+    color: red;
+}
+
+ul li:last-child {
+    color: blue;
+}
+
+.exemplo p:first-child {
+    color:crimson
+}
+
+.exemplo p:last-child {
+    color:forestgreen
+}
+
+.exemplo2 p:nth-child(5) {
+    color: goldenrod;
+}
