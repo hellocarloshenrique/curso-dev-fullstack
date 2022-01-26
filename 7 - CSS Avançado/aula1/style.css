@@ -1,0 +1,15 @@
+:root {
+    --color-primary: rgb(90, 5, 170);
+}
+
+p {
+    color: var(--color-primary);
+}
+
+button {
+    width: auto;
+    height: auto;
+    background: var(--color-primary);
+    color: white;
+    cursor: pointer;
+}
