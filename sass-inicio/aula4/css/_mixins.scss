@@ -1,0 +1,11 @@
+/* @mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+} */
+
+@mixin reset-list($margem: 0, $espacamento: 0, $estilo: none) {
+    margin: $margem;
+    padding: $espacamento;
+    list-style: $estilo;
+}
