@@ -1,5 +1,7 @@
 $color-primary: rgb(22, 22, 22);
 $color-secondary: blueviolet;
+$font-primary: 'Arial', sans-serif;
+$font-secondary: 'Verdana', sans-serif;
 
 * {
     margin: 0;
@@ -35,6 +37,7 @@ body {
         p {
             font-size: 14px;
             margin-bottom: 15px;
+            font: $font-secondary;
 
             &.hidden {
                 display: none;
