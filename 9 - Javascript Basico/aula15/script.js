@@ -3,3 +3,4 @@ function escreverNoConsole(mensagem, nome) {
 };
 
 escreverNoConsole('Seja muito bem-vindo(a),', 'Thiago')
+
