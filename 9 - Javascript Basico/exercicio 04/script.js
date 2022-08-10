@@ -6,7 +6,6 @@ function entrada() {
 
     if (nome === '' || idade === '') {
         alert("Preencha os campos corretamente!")
-        return entrada
     }else{
         
         if(nome.toLowerCase() == 'neo' && idade < 18) {
