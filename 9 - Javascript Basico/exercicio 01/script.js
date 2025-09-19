@@ -1,18 +1,9 @@
 
-/* prompt("Olá! Digite seu nome: ")
-prompt("Qual a sua idade?") */
+let nome = prompt('Digite seu nome')
+let idade = prompt('Digite sua idade')
 
-nome = prompt("Olá! Digite seu nome: ") 
-idade = prompt("Qual a sua idade?")
-
-/* if(idade < 19) {
-    console.log("Olá, "+nome+"! Você é menor de idade.")
+if (idade < 18) {
+    document.writeln(`Ola, ${nome}, voce e MENOR de idade.`)
 } else {
-    console.log("Olá, "+nome+"! Você é maior de idade.")
-} */
-
-if(idade < 19) {
-    document.write(`Olá, ${nome}! Você é menor de idade.`)
-} else {
-    document.write(`Olá, ${nome}! Você é maior de idade.`)
+    document.writeln(`Ola, ${nome}, voce e MAIOR de idade`)
 }
