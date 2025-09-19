@@ -1,22 +1,27 @@
 
-let nome = prompt("Olá! Digite seu nome: ") 
-let idade = prompt("Qual a sua idade?")
+let nome = prompt('Digite seu nome')
+let idade = prompt('Digite sua idade')
 
+// if (idade < 18 && nome === 'Thomas Anderson') {
+//     document.writeln(`Ola, ${nome}, voce e MENOR de idade. Voce e o Neo do filme The Matrix`)
+// } else if (idade >= 18 && nome === 'thomas anderson') {
+//     document.writeln(`Ola, ${nome}, voce e MAIOR de idade. Voce e o Neo do filme The Matrix`)
+// } else if (idade < 18) {
+//     document.writeln(`Ola, ${nome}, voce e menor de idade.`)
+// }   else {
+//     document.writeln(`Ola, ${nome}, voce e maior de idade.`)
+// }
 
-/* if(idade < 19) {
-    document.write(`Olá, ${nome}! Você é menor de idade.`)
-} else if {
-    document.write(`Olá, ${nome}! Você é maior de idade.`)
-}
-} */
+const nomeLimpo = nome.toLowerCase();
 
-
-if(nome.toLowerCase() == 'neo' && idade < 18) {
-    document.write(`Olá, ${nome}! Você é menor de idade. Você é personagem do filme Matrix!`)
-} else if(nome.toLowerCase() == 'neo' && idade >= 18) {
-    document.write(`Olá, ${nome}! Você é maior de idade. Você é personagem do filme Matrix!`)
-}else if(idade < 19) {
-    document.write(`Olá, ${nome}! Você é menor de idade.`)
-} else{
-    document.write(`Olá, ${nome}! Você é maior de idade.`)
+if (nomeLimpo === 'thomas anderson') {
+    if (idade < 18) {
+        document.writeln(`Ola, ${nome}, voce e MENOR de idade. Voce e o Neo do filme The Matrix`)
+    } else {
+        document.writeln(`Ola, ${nome}, voce e MAIOR de idade. Voce e o Neo do filme The Matrix`)
+    }
+} else if (idade < 18) {
+    document.writeln(`Ola, ${nome}, voce e menor de idade.`)
+} else {
+    document.writeln(`Ola, ${nome}, voce e maior de idade.`)
 }
