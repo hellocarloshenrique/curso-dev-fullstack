@@ -6,11 +6,14 @@ let textoDigitado = document.querySelector('#textoDigitado')
 botaoCadastrar.onclick = function () {
 
     const nomeDaTarefa = textoDigitado.value 
-    toast.innerHTML = `Tarefa ${nomeDaTarefa} cadastrada com sucesso`
+    toast.innerHTML = `Tarefa "${nomeDaTarefa}" cadastrada com sucesso`
 
     toast.classList.add('visible')
 
     setTimeout(function() {
         toast.classList.remove('visible')
     }, 5000)
+    
+    //comando para limpar o imput depois de digitado
+    textoDigitado.value = ''
 }
