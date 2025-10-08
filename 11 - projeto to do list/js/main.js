@@ -28,11 +28,19 @@ const Main = {
             const li = e.target.parentElement
             
             const isDone = li.classList.contains('done')
-            if (isDone) {
-                li.classList.remove('done')
-            } else {
-                li.classList.add('done')
-            }
+            //usando IF ELSE de forma tradicional
+            // if (isDone) {
+            //     li.classList.remove('done')
+            // } else {
+            //     li.classList.add('done')
+            // } 
+
+            //essa e outra maneira de fazer if com menos processameneto e usando melhores praticas
+            if (!isDone) {
+                return li.classList.add('done')
+            } 
+
+            li.classList.remove('done')
         }
     }
 
