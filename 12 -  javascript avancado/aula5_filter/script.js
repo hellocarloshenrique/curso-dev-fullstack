@@ -33,6 +33,9 @@ console.log(clientesDamasceno)
 
 const clientesCarlos = clientes.filter(cliente => {
     return cliente.name === 'Carlos' ? true : false 
+    //ou
+    // 
+    //return cliente.name === 'Carlos'
 })
 
 console.log(clientesCarlos);
