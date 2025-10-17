@@ -25,3 +25,31 @@ const clientesFinal = clientes.reduce((acc, curr) => {
 })
 
 console.log(clientesFinal);
+
+
+//-----------------------------------------------------
+//outro exemplo
+
+const preco = [10.5, 20.0, 5.5, 50.0];
+
+const total = preco.reduce((acc, preco) => {
+    //acc comeca em 0, depois sera 10.5, depois 30.5, etc
+    return acc + preco;
+}, 0)
+
+console.log(total);
+
+
+//-----------------------------------------------------
+//outro exemplo
+
+const numeros = [10, 20, 5, 50];
+
+
+const numeroFinal = numeros.reduce((acc, curr) => {
+    acc += `${curr + 1} - `
+    return acc;
+}, '')
+
+console.log(numeroFinal);
+// saida: '11 - 21 - 6 - 51'
