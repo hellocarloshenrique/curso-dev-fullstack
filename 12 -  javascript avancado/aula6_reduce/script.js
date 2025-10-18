@@ -51,5 +51,6 @@ const numeroFinal = numeros.reduce((acc, curr) => {
     return acc;
 }, '')
 
-console.log(numeroFinal);
+const numeroFinalSemIfen = numeroFinal.slice(0, -3)
+console.log(numeroFinalSemIfen);
 // saida: '11 - 21 - 6 - 51'
