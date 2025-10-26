@@ -30,5 +30,10 @@ cadForm.addEventListener('submit', async (e) => {
 
     //Remover os registros do local Storage
     localStorage.removeItem('usuario')
+
+    //aqui estou apenas testanto subir os arquivos para o rep remoto do gihub
+    //teste-auth 1
     
 })
+
+
