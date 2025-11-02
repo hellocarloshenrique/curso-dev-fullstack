@@ -1,0 +1,15 @@
+{
+  "name": "aula2",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Carlos henrique R. Damasceno",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
