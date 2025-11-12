@@ -1,5 +1,5 @@
 import { fastify } from 'fastify'
-import { DatabaseMemory } from './database-memory'
+import { DatabaseMemory } from './database-memory.js'
 
 const server = fastify()
 
