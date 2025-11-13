@@ -16,7 +16,7 @@ server.post('/videos', (request, reply) => {
         //usando short syntax
         title,
         description,
-        durations,
+        duration,
     })
     
     return reply.status(201).send()
