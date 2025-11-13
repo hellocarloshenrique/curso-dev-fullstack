@@ -5,16 +5,25 @@ const server = fastify()
 
 const database =  new DatabaseMemory()
 
-server.post('/videos', () => {
+server.post('/videos', (request, reply) => {
+    const { title, description, duration } = request.body
+
+    
     database.create({
-        title: 'Video 01',
-        description: 'Este e o video 01',
-        duration: 180,
+        // title: title,
+        // description: description,
+        // duration: duration,
+        //usando short syntax
+        title,
+        description,
+        durations,
     })
+    
+    return reply.status(201).send()
 })
 
 server.get('/videos', () => {
-    return 'Hello World'
+    return 'Hello Worldmesmo'
 })
 
 server.put('/videos', () => {
