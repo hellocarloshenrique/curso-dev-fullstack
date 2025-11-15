@@ -23,15 +23,32 @@ server.post('/videos', (request, reply) => {
 })
 
 server.get('/videos', () => {
-    return 'Hello Worldmesmo'
+    const videos = database.list()
+
+    console.log(videos);
+    
+    return videos
 })
 
-server.put('/videos', () => {
-    return 'Hello World'
+server.put('/videos/:id', (request, reply) => {
+    const videoId = request.params.id
+    const { title, description, duration } = request.body
+
+    database.update(videoId, {
+        title,
+        description,
+        duration,
+    })
+
+    return reply.status(204).send()
 })
 
-server.delete('/videos', () => {
-    return 'Hello World'
+server.delete('/videos/:id', () => {
+    const videoId = request.params.id
+
+    database.delete(videoId)
+
+    return  reply.status(204).send()
 })
 
 server.listen({
