@@ -17,3 +17,15 @@ console.log(colider);
 console.log(equipeAuxiliar);
 
 
+// Coletar Argumentos de Função
+
+// O '...agentes' coleta todos os argumentos passados e os coloca no array 'agentes'
+function relatorioDeAgentes(primeiroAgente, ...agentesRestantes) {
+    console.log(`Agente Principal: ${primeiroAgente}`);
+    console.log(`Outros agentes no local: ${agentesRestantes.length}`);
+}
+
+relatorioDeAgentes("Smith", "Johnson", "Brown", "Thompson");
+// Saída: 
+// Agente Principal: Smith
+// Outros agentes no local: 3
