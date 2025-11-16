@@ -8,3 +8,4 @@ const contatoTripulante = {
 const { nome, telefone } = contatoTripulante
 
 console.log(`Contato: ${nome} - ${telefone}`);
+console.log(`tripulante da: ${nave}`);
