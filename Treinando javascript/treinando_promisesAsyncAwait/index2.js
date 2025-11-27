@@ -14,7 +14,7 @@ function walkDogs() {
 function cleanKitchen() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            const kitchenCleaned = true
+            const kitchenCleaned = false
 
             if(kitchenCleaned) {
                 resolve('You clean the kitchen 🍲')
@@ -25,15 +25,38 @@ function cleanKitchen() {
     })
 }
 
-async function doChores() {
-    
-    const walkDogsResult = await walkDogs()
-    console.log(walkDogsResult);
+function takeOutTrash() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
 
-    const cleanKitchenResult = await cleanKitchen()
-    console.log(cleanKitchenResult);
-    
-    
+            const trashRemoved = true
+
+            if (trashRemoved) {
+                resolve('You removed trash 🗑️')
+            } else {
+                reject('You did not remove trash')
+            }
+        }, 1500)
+    })
+}
+
+async function doChores() {
+
+    try {
+        const walkDogsResult = await walkDogs()
+        console.log(walkDogsResult);
+
+        const cleanKitchenResult = await cleanKitchen()
+        console.log(cleanKitchenResult);
+        
+        const takeOutTrashResult = await takeOutTrash()
+        console.log(takeOutTrashResult);
+        
+        console.log('You finish all the chores!');
+    }
+    catch(error) {
+        console.error(error);
+    }
 }
 
 doChores()
