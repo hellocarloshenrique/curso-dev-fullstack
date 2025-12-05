@@ -3,11 +3,11 @@ function walkDogs() {
         setTimeout(() => {
             const dogWalked = true
             if(dogWalked) {
-                resolve('You walk the dog 🐕')
+                resolve('You walk the dog')
             } else {
                 reject("You DID'NT walk the dog")
             }
-        }, 1500);
+        }, 1900);
     })
 }
 
@@ -17,7 +17,7 @@ function cleanKitchen() {
             const kitchenCleaned = false
 
             if(kitchenCleaned) {
-                resolve('You clean the kitchen 🍲')
+                resolve('You clean the kitchen')
             } else {
                 reject('You did not clean the kitchen')
             }
@@ -32,11 +32,11 @@ function takeOutTrash() {
             const trashRemoved = true
 
             if (trashRemoved) {
-                resolve('You removed trash 🗑️')
+                resolve('You removed trashs')
             } else {
                 reject('You did not remove trash')
             }
-        }, 1500)
+        }, 2500)
     })
 }
 
